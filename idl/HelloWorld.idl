@@ -1,5 +1,5 @@
 // HelloWorld.idl
 struct HelloWorld
 {
-    string msg;
+    string<128> msg;
 };

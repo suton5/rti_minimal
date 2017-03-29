@@ -8,9 +8,6 @@ rm src/make*
 
 cd src
 rtiddsgen -replace -language C++ -example x64Linux3gcc4.8.2 ../idl/*.idl -d ./
-#rtiddsgen -replace -language C++ -example x64Linux3gcc4.8.2 -inputXml ../idl/*.xml -d ./
-
-#rtiddsgen -replace -language C++ -example armv6vfphLinux3.xgcc4.7.2 ../idl/*.idl -d ./
 
 make -f  app_makefile
 

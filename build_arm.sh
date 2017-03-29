@@ -6,9 +6,11 @@ rm src/*.cxx
 rm src/*.xml
 rm src/make*
 
+#Generate sample codes for RTI pub-sub
 cd src
 rtiddsgen -replace -language C++ -example armv6vfphLinux3.xgcc4.7.2 ../idl/*.idl -d ./
 
+#Change makefile from default -march=armv6 to -march=armv6 (tested on beaglebone)
 perl -pi -e 's/-march=armv6/-march=armv7-a/g' makefile*
 
 make -f  app_makefile

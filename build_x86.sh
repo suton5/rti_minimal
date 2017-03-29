@@ -6,6 +6,7 @@ rm src/*.cxx
 rm src/*.xml
 rm src/make*
 
+#Generate sample codes for RTI pub-sub
 cd src
 rtiddsgen -replace -language C++ -example x64Linux3gcc4.8.2 ../idl/*.idl -d ./
 

@@ -48,7 +48,6 @@ objs\<arch>\HelloWorld_subscriber <domain_id>
 #include "HelloWorld.h"
 #include "HelloWorldSupport.h"
 #include "ndds/ndds_cpp.h"
-#include "test/test.h"
 
 /* Delete all entities */
 static int publisher_shutdown(
@@ -182,8 +181,7 @@ extern "C" int publisher_main(int domainId, int sample_count)
         printf("Writing HelloWorld, count %d\n", count);
 
         /* Modify the data to be sent here */
-        instance->msg = "hello";
-        
+
         retcode = HelloWorld_writer->write(*instance, instance_handle);
         if (retcode != DDS_RETCODE_OK) {
             printf("write error %d\n", retcode);

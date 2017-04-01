@@ -1,4 +1,5 @@
-include ../src/make*
 
-INCLUDES += -I../lib
-#COMMONSOURCES += ../lib/test/test.cpp
+INCLUDES = -I../lib
+COMMONSOURCES = ../lib/test/test.cpp
+
+include ../src/make*

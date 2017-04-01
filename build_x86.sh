@@ -10,5 +10,9 @@ rm src/make*
 cd src
 rtiddsgen -replace -language C++ -example x64Linux3gcc4.8.2 ../idl/*.idl -d ./
 
+#Add libraries from app_makefile to generated makefile (this is a hack for now)
+perl -pi -e 's/INCLUDES =/INCLUDES +=/g' makefile*
+perl -pi -e 's/COMMONSOURCES =/COMMONSOURCES +=/g' makefile*
+
 make -f  app_makefile
 

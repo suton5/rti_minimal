@@ -10,8 +10,12 @@ rm src/make*
 cd src
 rtiddsgen -replace -language C++ -example armv6vfphLinux3.xgcc4.7.2 ../idl/*.idl -d ./
 
-#Change makefile from default -march=armv6 to -march=armv6 (tested on beaglebone)
+#Change makefile from default -march=armv6 to -march=armv7-a (tested on beaglebone and nanopi neo/air)
 perl -pi -e 's/-march=armv6/-march=armv7-a/g' makefile*
+perl -pi -e 's/LINKER_FLAGS =/LINKER_FLAGS = -std=c++11/g' makefile*
 
-make -f  app_makefile
+#Add libraries from app_makefile to generated makefile (this is a hack for now)
+perl -pi -e 's/INCLUDES =/INCLUDES +=/g' makefile*
+perl -pi -e 's/COMMONSOURCES =/COMMONSOURCES +=/g' makefile*
 
+make -f app_makefile

@@ -41,13 +41,13 @@ DEFINES = -DRTI_UNIX -DRTI_LINUX -DRTI_64BIT
 
 
 
-INCLUDES = -I. -I$(NDDSHOME)/include -I$(NDDSHOME)/include/ndds 
+INCLUDES += -I. -I$(NDDSHOME)/include -I$(NDDSHOME)/include/ndds 
        
 LIBS = -L$(NDDSHOME)/lib/$(TARGET_ARCH) \
         -lnddscppz -lnddscz -lnddscorez $(SYSLIBS)
 
 CDRSOURCES    = HelloWorld.idl
-COMMONSOURCES = HelloWorldSupport.cxx HelloWorldPlugin.cxx HelloWorld.cxx 
+COMMONSOURCES += HelloWorldSupport.cxx HelloWorldPlugin.cxx HelloWorld.cxx 
 
 EXEC          = HelloWorld_subscriber HelloWorld_publisher
 DIRECTORIES   = objs.dir objs/$(TARGET_ARCH).dir

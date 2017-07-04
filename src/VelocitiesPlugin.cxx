@@ -3,7 +3,7 @@
 /*
 WARNING: THIS FILE IS AUTO-GENERATED. DO NOT MODIFY.
 
-This file was generated from HelloWorld.idl using "rtiddsgen".
+This file was generated from Velocities.idl using "rtiddsgen".
 The rtiddsgen tool is part of the RTI Connext distribution.
 For more information, type 'rtiddsgen -help' at a command shell
 or consult the RTI Connext manual.
@@ -46,7 +46,7 @@ or consult the RTI Connext manual.
 #include "pres/pres_typePlugin.h"
 #endif
 
-#include "HelloWorldPlugin.h"
+#include "VelocitiesPlugin.h"
 
 /* ----------------------------------------------------------------------------
 *  Type HelloWorld

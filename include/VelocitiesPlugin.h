@@ -3,16 +3,16 @@
 /*
 WARNING: THIS FILE IS AUTO-GENERATED. DO NOT MODIFY.
 
-This file was generated from HelloWorld.idl using "rtiddsgen".
+This file was generated from Velocities.idl using "rtiddsgen".
 The rtiddsgen tool is part of the RTI Connext distribution.
 For more information, type 'rtiddsgen -help' at a command shell
 or consult the RTI Connext manual.
 */
 
-#ifndef HelloWorldPlugin_1436885505_h
-#define HelloWorldPlugin_1436885505_h
+#ifndef VelocitiesPlugin_2013134752_h
+#define VelocitiesPlugin_2013134752_h
 
-#include "HelloWorld.h"
+#include "Velocities.h"
 
 struct RTICdrStream;
 
@@ -271,5 +271,5 @@ extern "C" {
 #define NDDSUSERDllExport
 #endif
 
-#endif /* HelloWorldPlugin_1436885505_h */
+#endif /* VelocitiesPlugin_2013134752_h */
 

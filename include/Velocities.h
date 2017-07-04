@@ -3,14 +3,14 @@
 /*
 WARNING: THIS FILE IS AUTO-GENERATED. DO NOT MODIFY.
 
-This file was generated from HelloWorld.idl using "rtiddsgen".
+This file was generated from Velocities.idl using "rtiddsgen".
 The rtiddsgen tool is part of the RTI Connext distribution.
 For more information, type 'rtiddsgen -help' at a command shell
 or consult the RTI Connext manual.
 */
 
-#ifndef HelloWorld_1436885505_h
-#define HelloWorld_1436885505_h
+#ifndef Velocities_2013134752_h
+#define Velocities_2013134752_h
 
 #ifndef NDDS_STANDALONE_TYPE
 #ifndef ndds_cpp_h
@@ -99,5 +99,5 @@ RTIBool HelloWorld_copy(
 #define NDDSUSERDllExport
 #endif
 
-#endif /* HelloWorld */
+#endif /* Velocities */
 

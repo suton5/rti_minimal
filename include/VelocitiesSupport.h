@@ -2,17 +2,17 @@
 /*
 WARNING: THIS FILE IS AUTO-GENERATED. DO NOT MODIFY.
 
-This file was generated from HelloWorld.idl using "rtiddsgen".
+This file was generated from Velocities.idl using "rtiddsgen".
 The rtiddsgen tool is part of the RTI Connext distribution.
 For more information, type 'rtiddsgen -help' at a command shell
 or consult the RTI Connext manual.
 */
 
-#ifndef HelloWorldSupport_1436885505_h
-#define HelloWorldSupport_1436885505_h
+#ifndef VelocitiesSupport_2013134752_h
+#define VelocitiesSupport_2013134752_h
 
 /* Uses */
-#include "HelloWorld.h"
+#include "Velocities.h"
 
 #ifndef ndds_cpp_h
 #include "ndds/ndds_cpp.h"
@@ -56,5 +56,5 @@ DDS_DATAREADER_CPP(HelloWorldDataReader, HelloWorldSeq, HelloWorld);
 #define NDDSUSERDllExport
 #endif
 
-#endif  /* HelloWorldSupport_1436885505_h */
+#endif  /* VelocitiesSupport_2013134752_h */
 

@@ -29,9 +29,18 @@ include_directories(
 
 add_definitions(-DRTI_UNIX)
 
+if(${CMAKE_SYSTEM_PROCESSOR} MATCHES "x86_64")
+  MESSAGE(${CMAKE_SYSTEM_PROCESSOR})
+elseif(${CMAKE_SYSTEM_PROCESSOR} MATCHES "armv7l")
+  MESSAGE("hello")
+endif()
+
 link_directories(
-  ${NDDSHOME}/lib/x64Linux3gcc4.8.2
-  ${NDDSHOME}/lib/armv6vfphLinux3.xgcc4.7.2
+  if(${CMAKE_SYSTEM_PROCESSOR} MATCHES "x86_64")
+    ${NDDSHOME}/lib/x64Linux3gcc4.8.2
+  elseif(${CMAKE_SYSTEM_PROCESSOR} MATCHES "armv7l")
+    ${NDDSHOME}/lib/armv6vfphLinux3.xgcc4.7.2
+  endif()
 )
 
 add_library(HelloWorld_lib

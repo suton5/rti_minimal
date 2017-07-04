@@ -34,13 +34,13 @@ link_directories(
   ${NDDSHOME}/lib/armv6vfphLinux3.xgcc4.7.2
 )
 
-add_library(Velocities_lib
-  src/Velocities.cxx
-  src/VelocitiesPlugin.cxx
-  src/VelocitiesSupport.cxx
+add_library(HelloWorld_lib
+  src/HelloWorld.cxx
+  src/HelloWorldPlugin.cxx
+  src/HelloWorldSupport.cxx
 )
 
-target_link_libraries(Velocities_lib
+target_link_libraries(HelloWorld_lib
   nddsc
   nddscpp
   nddscore
@@ -48,17 +48,17 @@ target_link_libraries(Velocities_lib
 )
 
 add_executable(publisher
-  src/Velocities_publisher.cxx
+  src/HelloWorld_publisher.cxx
 )
 
 target_link_libraries(publisher
-  Velocities_lib
+  HelloWorld_lib
 )
 
 add_executable(subscriber
-  src/Velocities_subscriber.cxx
+  src/HelloWorld_subscriber.cxx
 )
 
 target_link_libraries(subscriber
-  Velocities_lib
+  HelloWorld_lib
 )

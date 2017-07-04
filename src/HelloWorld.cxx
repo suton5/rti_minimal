@@ -3,7 +3,7 @@
 /*
 WARNING: THIS FILE IS AUTO-GENERATED. DO NOT MODIFY.
 
-This file was generated from Velocities.idl using "rtiddsgen".
+This file was generated from HelloWorld.idl using "rtiddsgen".
 The rtiddsgen tool is part of the RTI Connext distribution.
 For more information, type 'rtiddsgen -help' at a command shell
 or consult the RTI Connext manual.
@@ -28,7 +28,7 @@ or consult the RTI Connext manual.
 #include "ndds_standalone_type.h"
 #endif
 
-#include "Velocities.h"
+#include "HelloWorld.h"
 
 /* ========================================================================= */
 const char *HelloWorldTYPENAME = "HelloWorld";

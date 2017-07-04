@@ -35,3 +35,8 @@ mv src/*.h include
 
 #delete created makefile
 rm src/make*
+
+rm -rf build
+mkdir build
+
+./compile

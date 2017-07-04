@@ -66,8 +66,10 @@ LIST(APPEND RTI_CHECK_INCLUDE_DIRS
 LIST(APPEND RTI_CHECK_LIBRARY_DIRS
   $ENV{NDDSHOME}/lib/i86Linux2.6gcc4.4.5
   $ENV{NDDSHOME}/lib/x64Linux3gcc4.8.2
+  $ENV{NDDSHOME}/lib/armv6vfphLinux3.xgcc4.7.2
   /opt/RTI/ndds.5.1.0/lib/x64Linux3gcc4.8.2
-  /root/RTI/ndds.5.0.0/lib/armv7neonhfLinux3.xgcc4.6.3)
+  /root/RTI/ndds.5.0.0/lib/armv7neonhfLinux3.xgcc4.6.3
+  )
 
 # Search supplied hint directories first if supplied.
 FIND_PATH(RTI_INCLUDE_DIR
